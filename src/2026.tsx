@@ -84,57 +84,71 @@ const DEFAULT_TRIP_DATA = {
   hotels: [
     {
       id: 'hotel-1',
-      nights: 'Day 1 ~ Day 5 住宿（大阪核心區・連住免搬行李）',
-      nameZh: '大阪御堂筋 / 難波梅田精選飯店 (可按右上編輯修改實際飯店)',
-      nameJa: 'ホテル ロイヤルクラシック大阪 (或同級大阪市中心飯店)',
-      addressJa: '〒542-0076 大阪府大阪市中央区難波4丁目3-3',
-      addressZh: '大阪府大阪市中央區難波 4-3-3（地下鐵難波站 / 御堂筋線直結）',
-      phone: '+81-6-6633-0030',
-      checkIn: '15:00 後',
-      checkOut: '11:00 前',
-      nearby: '步行 2 分鐘內有 7-11、Lawson、大國藥妝與高島屋百貨，長輩隨時回房午休超方便！',
-      mapQuery: '難波駅 大阪'
+      nights: '第 1～2 晚（11/26、11/27 連住兩晚，11/28 退房）',
+      nameZh: '神戶萬豪飯店 (Kobe Marriott Hotel)',
+      nameJa: '神戸マリオットホテル（旧ホテルクラウンパレス神戸）',
+      addressJa: '〒650-0044 兵庫県神戸市中央区東川崎町1-3-5（JR神戸駅直結・ハーバーランド）',
+      addressZh: '兵庫縣神戶市中央區東川崎町 1-3-5（JR神戶站地下街直通・神戶港 Harborland）',
+      taxiInstructionJa: '運転手さんへ：JR神戸駅前の「神戸マリオットホテル」（ハーバーランド・旧ホテルクラウンパレス神戸、住所：神戸市中央区東川崎町1-3-5）までお願いします。',
+      phone: '+81-78-362-1145',
+      checkIn: '15:00 入住',
+      checkOut: '11:00 退房（連住兩晚免搬行李！）',
+      features: [
+        'JR神戶站地下街直通（免日曬雨淋）',
+        '連住兩晚（11/26、11/27）免整理行李超輕鬆',
+        '步行即達神戶港 umie 百貨與 MOSAIC 摩賽克廣場',
+        '房內空間寬敞、長輩友善無障礙動線'
+      ],
+      nearby: 'JR神戶站地下街直通（免吹風淋雨）！連住兩晚不用每天收行李，步行即達神戶港 Harborland umie 百貨、MOSAIC 摩賽克廣場與超市，全區平坦好走、長輩散步看夜景超方便！',
+      mapQuery: '神戸マリオットホテル Kobe Marriott Hotel'
     },
     {
       id: 'hotel-2',
-      nights: '備註 / 第二間住宿（若有分開住宿可填寫於此）',
-      nameZh: '京都或神戶備用住宿資訊卡',
-      nameJa: '京都駅前 / 神戸三宮ホテル',
-      addressJa: '〒600-8216 京都府京都市下京区東塩小路町',
-      addressZh: '京都市下京區東鹽小路町（京都車站步行圈）',
-      phone: '+81-75-361-1111',
-      checkIn: '15:00 後',
-      checkOut: '11:00 前',
-      nearby: '周邊有伊勢丹百貨、地下街餐廳與無障礙電梯通道。',
-      mapQuery: '京都駅'
+      nights: '第 3～5 晚（11/28、11/29、11/30 共三晚，12/01 退房）',
+      nameZh: '大阪難波/心齋橋市區飯店（可點上方「編輯資訊」填入飯店名）',
+      nameJa: 'ホテル ロイヤルクラシック大阪 (或同級大阪市中心飯店)',
+      addressJa: '〒542-0076 大阪府大阪市中央区難波4丁目3-3',
+      addressZh: '大阪府大阪市中央區難波 4-3-3（地下鐵難波站 / 御堂筋線直結）',
+      taxiInstructionJa: '運転手さん、このホテルまでお願いします。住所：〒542-0076 大阪府大阪市中央区難波4丁目3-3',
+      phone: '+81-6-6633-0030',
+      checkIn: '15:00 入住',
+      checkOut: '11:00 退房（連住三晚免搬行李！）',
+      features: [
+        '地鐵御堂筋線直結，交通四通八達',
+        '連住三晚（11/28～11/30）免搬行李',
+        '步行即達高島屋百貨、藥妝店與商店街'
+      ],
+      nearby: '步行 2 分鐘內有 7-11、Lawson、大國藥妝與高島屋百貨，長輩隨時回房休息超方便！',
+      mapQuery: '難波駅 大阪'
     }
   ],
   days: [
     {
       dayNumber: 1,
       date: '11/26 (四)',
-      title: '抵達神戶・安藤忠雄建築美學與金色御堂筋',
-      area: '台中 ➔ 神戶 ➔ 大阪御堂筋',
-      weatherTip: '約 10°C ~ 16°C｜海邊微涼，建議洋蔥式穿搭（保暖內搭＋防風外套）',
-      walkingLevel: '輕鬆慢遊（多數路段平坦、有電梯與完善休息座位）',
-      highlight: '星宇航空直飛神戶、兵庫縣立美術館大青蛙與海岸風光、御堂筋金黃銀杏大道與聖誕點燈',
-      customNote: '第一天剛下飛機不趕路，下午在美術館喝咖啡看海，傍晚到大阪賞銀杏吃好料！',
+      title: '抵達神戶・安藤忠雄建築美學、金色御堂筋與神戶萬豪之夜',
+      area: '台中 ➔ 神戶機場 ➔ 神戶萬豪飯店 ➔ 美術館 / 神戶港夜景',
+      hotel: '神戶萬豪飯店（Kobe Marriott Hotel）— 連住第 1 晚',
+      weatherTip: '約 10°C ~ 16°C｜神戶港海邊微涼，建議洋蔥式穿搭（保暖內搭＋防風外套）',
+      walkingLevel: '輕鬆慢遊（神戶萬豪飯店直通車站與百貨，美術館設有完善電梯與座位）',
+      highlight: '星宇航空直飛神戶、入住「神戶萬豪飯店（連住兩晚）」、兵庫縣立美術館大青蛙、神戶港 Harborland 或御堂筋銀杏點燈',
+      customNote: '第一天剛下飛機最輕鬆！先到 JR神戶站直結的「神戶萬豪飯店」放行李（連住兩晚不用收行李！），下午去美術館喝咖啡看海，傍晚逛飯店旁的 umie 百貨或看銀杏點燈！',
       stops: [
         {
           id: 'd1-1',
           time: '06:45 - 12:30',
           category: '交通',
-          title: '台中清泉崗機場 (RMQ) ➔ 神戶機場 (UKB)',
-          summary: '搭乘星宇航空客機飛往日本關西神戶機場，航程舒適平穩。',
-          restroom: '機場與機上皆有完善無障礙洗手間',
-          seating: '候機室座位充足，登機門旁有飲水機可裝溫熱水',
-          terrain: '全程平坦、設有電扶梯與電梯',
-          details: '【集合提醒】請攜帶護照正本（效期滿6個月以上）、隨身常備藥、行動電源（務必隨身攜帶不可託運）。抵達神戶機場第2航廈後，通關動線單純免走遠路，對長輩非常友善。',
-          mapQuery: '神戸空港'
+          title: '台中清泉崗機場 (RMQ) ➔ 神戶機場 (UKB) ➔ 神戶萬豪飯店寄放行李/入住',
+          summary: '搭乘星宇航空直飛神戶機場，出關後前往 JR神戶站直結的「神戶萬豪飯店」寄放行李（11/26、11/27連住兩晚），一身輕便出發！',
+          restroom: '機場、機上與神戶萬豪飯店大廳皆有完善無障礙洗手間',
+          seating: '候機室與飯店大廳沙發座位充足，隨時可休息喝溫水',
+          terrain: '全程平坦、神戶萬豪飯店與 JR神戶站地下街直通（設有無障礙電梯，免吹風淋雨）',
+          details: '【集合與住宿亮點】請攜帶護照正本（效期滿6個月以上）、隨身常備藥、行動電源（務必隨身攜帶不可託運）。抵達神戶機場第2航廈後，前往「神戶萬豪飯店（Kobe Marriott Hotel）」，今明兩晚都住這裡，長輩不用每天打包行李超輕鬆！',
+          mapQuery: '神戸マリオットホテル'
         },
         {
           id: 'd1-2',
-          time: '14:00 - 16:00',
+          time: '14:30 - 16:30',
           category: '景點',
           title: '兵庫縣立美術館（安藤忠雄建築代表作）',
           summary: '欣賞建築大師安藤忠雄設計的清水模美學、旋轉樓梯與可愛的巨型「美子青蛙」！',
@@ -146,86 +160,88 @@ const DEFAULT_TRIP_DATA = {
         },
         {
           id: 'd1-3',
-          time: '17:00 - 20:00',
+          time: '17:30 - 20:30',
           category: '賞楓銀杏',
-          title: '大阪飯店 Check-in ＆ 御堂筋金黃銀杏大道點燈',
-          summary: '漫步大阪最具代表性的「御堂筋銀杏並木」，11月底正值滿地金黃與冬季璀璨點燈！',
-          restroom: '沿途百貨公司（大丸、高島屋、心齋橋PARCO）皆有高級洗手間',
-          seating: '百貨地下街與咖啡廳密集，隨時可入內吹暖氣休息',
-          terrain: '人行道寬敞平坦，完全沒有山坡階梯',
-          details: '【賞景重點】11月下旬至12月初是御堂筋約800棵銀杏樹轉為金黃色的最美時刻，入夜後更有「御堂筋 Illumination」浪漫燈海，金色燈光映照銀杏葉，非常適合全家拍大合照！晚餐於難波/心齋橋享用熱騰騰的日式鍋物或大阪美食。',
-          mapQuery: '御堂筋 いちょう並木'
+          title: '神戶港 Harborland umie ＆ MOSAIC 璀璨夜景 ／ 御堂筋金黃銀杏點燈（夜宿：神戶萬豪第1晚）',
+          summary: '於神戶萬豪飯店旁的 Harborland umie ＆ MOSAIC 廣場享美食看神戶塔夜景，或欣賞「御堂筋銀杏並木冬季點燈」！',
+          restroom: '神戶萬豪飯店、umie 百貨與沿途商場皆有五星級洗手間',
+          seating: '百貨餐廳與咖啡廳密集，隨時可入內吹暖氣休息用餐',
+          terrain: '人行道與神戶港濱海木棧道寬敞平坦，完全沒有山坡階梯',
+          details: '【雙享彈性安排】從「神戶萬豪飯店」散步 5 分鐘就能抵達神戶港 Harborland umie 百貨與 MOSAIC 摩賽克廣場，享用神戶牛排或日式定食，飯後散步回飯店休息超愜意；若精神充沛也可搭車前往欣賞「御堂筋 Illumination」金色銀杏燈海！',
+          mapQuery: '神戸ハーバーランド umie'
         }
       ]
     },
     {
       dayNumber: 2,
       date: '11/27 (五)',
-      title: '京都千年古剎・通天橋火紅楓海與百年大銀杏',
-      area: '京都（東福寺・西本願寺・京都車站）',
+      title: '免搬行李輕裝出發！京都東福寺火紅楓海與百年大銀杏',
+      area: '神戶萬豪飯店 ➔ JR新快速直達京都（西本願寺・東福寺）➔ 返回神戶萬豪飯店',
+      hotel: '神戶萬豪飯店（Kobe Marriott Hotel）— 連住第 2 晚（免搬行李！）',
       weatherTip: '約 8°C ~ 15°C｜京都早晚偏冷，建議配戴圍巾、穿好走防滑的健走鞋',
-      walkingLevel: '中等（東福寺人潮較多有部分階梯，西本願寺則全平坦）',
-      highlight: '京都賞楓第一名所「東福寺通天橋」紅葉雲海、西本願寺400年逆向生長大銀杏',
-      customNote: '今天風景最震撼！在東福寺不趕時間慢慢走，累了就到西本願寺看超巨大的金黃銀杏樹。',
+      walkingLevel: '輕裝舒適（免帶大行李！JR神戶站一班車直達京都，西本願寺全平坦）',
+      highlight: '連住神戶萬豪免收行李、JR新快速一班車直達京都、西本願寺400年大銀杏、東福寺通天橋紅葉雲海',
+      customNote: '今晚繼續住「神戶萬豪飯店」，所以今天完全不用收行李、不用拖大行李箱！吃完飯店早餐後，直接從地下街走進 JR神戶站，搭 JR新快速一班車直達京都賞楓！',
       stops: [
         {
           id: 'd2-1',
-          time: '09:30 - 12:00',
+          time: '08:30 - 11:30',
           category: '賞楓銀杏',
-          title: '京都東福寺（通天橋・臥雲橋紅葉雲海）',
-          summary: '日本賞楓排行榜第一名！超過兩千株火紅楓葉鋪滿溪谷，如紅雲般壯觀。',
-          restroom: '入園處與本堂旁設有大型公共洗手間（建議入園前先使用）',
-          seating: '方丈庭園迴廊與本堂周邊有木造長椅可供長輩歇腳賞楓',
-          terrain: '洗玉澗溪谷步道有高低差，建議長輩主要走平坦的「本堂周邊與通天橋主廊道」即可飽覽美景',
-          details: '【長輩貼心攻略】東福寺的「通天橋」望出去就是整片火紅楓海，不必走下溪谷就能拍出明信片級大景！若人潮較多請牽好長輩慢行。',
-          mapQuery: '東福寺 京都'
+          title: '神戶萬豪早餐 ➔ JR神戶站直達京都 ➔ 世界遺產・西本願寺（400年黃金大銀杏）',
+          summary: '免搬行李輕裝出發！從飯店直通的 JR神戶站搭「JR新快速（約52分鐘一班車直達）」抵京都站，先看最近的西本願寺百年巨型銀杏！',
+          restroom: '飯店大廳、JR新快速列車內、京都站與西本願寺皆有現代化無障礙洗手間',
+          seating: '從神戶站上車容易有舒適座位；西本願寺御影堂外廊寬敞，可坐著休息曬太陽',
+          terrain: '神戶萬豪直通 JR神戶站免淋雨；西本願寺地面極為開闊平坦，長輩走起來最舒服！',
+          details: '【連住兩晚最大優勢】因為今晚續住神戶萬豪飯店，大家只要背隨身小包包就能輕鬆去京都！御影堂前的「水吹銀杏（水吹きイチョウ）」樹齡約400年，樹冠向四周橫向展開宛如一把巨大的黃金大傘，11月底正是金黃最飽滿的巔峰期！',
+          mapQuery: '西本願寺 京都'
         },
         {
           id: 'd2-2',
-          time: '12:30 - 14:00',
+          time: '12:00 - 13:45',
           category: '美食',
-          title: '京都風味午膳（湯豆腐料理 / 京都車站美食街）',
+          title: '京都風味午膳（湯豆腐料理 / 京都車站伊勢丹美食街）',
           summary: '品嚐溫潤養生的京都傳統湯豆腐、京料理或精緻定食，暖胃又清爽。',
-          restroom: '餐廳內設有乾淨洗手間',
+          restroom: '餐廳與百貨內設有乾淨無障礙洗手間',
           seating: '特別安排一般桌椅座位（免跪坐榻榻米，保護長輩膝蓋）',
-          terrain: '室內平坦舒適',
+          terrain: '室內平坦舒適、電梯齊全',
           details: '【飲食照顧】湯豆腐口感軟嫩、溫熱清淡，非常合長輩胃口；年輕人也可加點天婦羅、和牛或宇治抹茶甜點。',
           mapQuery: '京都駅'
         },
         {
           id: 'd2-3',
-          time: '14:30 - 16:30',
+          time: '14:15 - 17:30',
           category: '賞楓銀杏',
-          title: '世界文化遺產・西本願寺（百年巨型黃金銀杏）',
-          summary: '免費參觀！境內兩棵樹齡約400年的「逆向生長大銀杏」金黃耀眼，氣勢驚人。',
-          restroom: '境內聞法會館與參拜服務處設有現代化無障礙洗手間',
-          seating: '廣場寬闊，御影堂與阿彌陀堂外廊皆可坐下休息曬太陽',
-          terrain: '境內地面極為開闊平坦，人潮比清水寺少很多，長輩逛起來最舒服！',
-          details: '【必看奇景】御影堂前的「水吹銀杏（水吹きイチョウ）」樹冠向四周橫向展開，宛如一把巨大的黃金大傘，11月底正是金黃最飽滿的巔峰期！',
-          mapQuery: '西本願寺 京都'
+          title: '京都東福寺（通天橋・臥雲橋紅葉雲海）➔ 搭 JR 新快速返回神戶萬豪飯店（連住第2晚）',
+          summary: '從京都站搭 JR 僅 1 站（2分鐘）即達日本賞楓第一名所「東福寺」！傍晚搭 JR 新快速一班車回神戶萬豪飯店休息。',
+          restroom: '東福寺入園處、方丈庭園旁與 JR 車站皆設有洗手間',
+          seating: '東福寺方丈庭園迴廊與本堂周邊有木造長椅可歇腳；回程搭 JR 新快速坐著休息約52分鐘即返抵神戶站',
+          terrain: '建議長輩主要走平坦的「本堂周邊與通天橋主廊道」，不必下溪谷就能飽覽兩千株火紅楓海',
+          details: '【長輩貼心攻略】站在「通天橋」望出去就是超過兩千株火紅楓葉交織成的紅葉雲海！賞楓後從京都站搭乘 JR 新快速直達 JR神戶站，走地下街就能直接回到溫暖的「神戶萬豪飯店」，在神戶港周邊享用晚餐！',
+          mapQuery: '東福寺 京都'
         }
       ]
     },
     {
       dayNumber: 3,
       date: '11/28 (六)',
-      title: '太陽之塔紅葉溪谷・夜間光影植物園奇幻夜',
-      area: '大阪（萬博紀念公園・LaLaport・長居植物園 teamLab）',
+      title: '神戶萬豪退房 ➔ 太陽之塔紅葉溪谷・夜間光影植物園奇幻夜',
+      area: '神戶萬豪飯店退房 ➔ 大阪（萬博紀念公園・LaLaport・長居植物園 teamLab）',
+      hotel: '大阪核心區飯店（連住第 1 晚）',
       weatherTip: '約 9°C ~ 15°C｜晚上看戶外光影展氣溫較低，請準備暖暖包與毛帽',
       walkingLevel: '舒適彈性（公園旁邊就是超大型商場，隨時可進室內休息喝茶）',
-      highlight: '萬博紀念公園「太陽之塔」與日本庭園楓葉祭、夜間 teamLab 植物園夢幻光影藝術',
-      customNote: '白天看楓葉與太陽之塔，下午在商場吹暖氣喝下午茶休息，傍晚再去超美的光影植物園！',
+      highlight: '神戶萬豪飯店悠閒早餐與退房、萬博紀念公園「太陽之塔」紅葉祭、夜間 teamLab 植物園夢幻光影藝術',
+      customNote: '早上在神戶萬豪飯店吃飽早餐後，11:00 前退房前往大阪！白天看太陽之塔與楓葉，下午在商場吹暖氣喝下午茶，傍晚再去光影植物園！',
       stops: [
         {
           id: 'd3-1',
-          time: '10:00 - 13:00',
+          time: '09:30 - 13:00',
           category: '賞楓銀杏',
-          title: '萬博紀念公園（太陽之塔・日本庭園・紅葉溪）',
-          summary: '大阪秋季賞楓秘境！近萬棵紅楓與金黃銀杏交織，還有壯觀的地標「太陽之塔」。',
-          restroom: '園區內每隔 200 公尺就有洗手間與無障礙廁所',
+          title: '神戶萬豪飯店退房 ➔ 大阪萬博紀念公園（太陽之塔・日本庭園・紅葉溪）',
+          summary: '於神戶萬豪飯店享用早餐後辦理退房，前往大阪秋季賞楓秘境「萬博紀念公園」，欣賞近萬棵紅楓、金黃銀杏與「太陽之塔」！',
+          restroom: '飯店大廳、車站與園區內每隔 200 公尺就有洗手間與無障礙廁所',
           seating: '日本庭園內有茶室、涼亭與大量景觀長椅，還可搭園內遊園小火車代步',
           terrain: '步道寬敞平緩，長輩可搭「森林小火車」輕鬆遊園免久走',
-          details: '【賞楓重點】11月底正好遇上「萬博紀念公園紅葉祭」，日本庭園的池泉倒映楓紅極美，長輩也能在傳統茶室品嚐抹茶與和菓子。',
+          details: '【行李與賞楓重點】退房後可先將行李寄放於大阪下榻飯店（或使用行李宅配服務 / 車站大型寄物櫃）。11月底正好遇上「萬博紀念公園紅葉祭」，日本庭園的池泉倒映楓紅極美，長輩也能在傳統茶室品嚐抹茶與和菓子。',
           mapQuery: '万博記念公園 太陽の塔'
         },
         {
@@ -259,6 +275,7 @@ const DEFAULT_TRIP_DATA = {
       date: '11/29 (日)',
       title: '家族歡樂分流日：環球影城狂歡 vs. 慢活賞楓下午茶',
       area: 'A線：日本環球影城 USJ ｜ B線：大阪城公園賞楓銀杏＆老派喫茶慢遊',
+      hotel: '大阪核心區飯店（連住第 2 晚，免搬行李）',
       weatherTip: '約 9°C ~ 16°C｜晴朗舒適，依自己體力選擇最喜歡的路線',
       walkingLevel: '彈性自選（年輕人衝樂園，長輩睡飽慢遊不鐵腿！）',
       highlight: '貼心雙路線分流設計！讓想玩遊樂設施的家人盡情嗨、想輕鬆賞景的長輩優雅慢遊',
@@ -307,6 +324,7 @@ const DEFAULT_TRIP_DATA = {
       date: '11/30 (一)',
       title: '北攝森林紅葉瀑布・百貨伴手禮採買與惜別晚宴',
       area: '箕面公園（或嵐山）/ 梅田心齋橋百貨商圈',
+      hotel: '大阪核心區飯店（連住第 3 晚，免搬行李）',
       weatherTip: '約 9°C ~ 15°C｜森林山谷空氣清新微涼，記得帶保溫瓶裝溫水',
       walkingLevel: '平緩好走（箕面步道為柏油緩坡，午後百貨逛街隨時可坐）',
       highlight: '品嚐季節限定「炸紅葉天婦羅」、森林芬多精賞楓、最後一晚伴手禮大採買',
@@ -354,7 +372,8 @@ const DEFAULT_TRIP_DATA = {
       dayNumber: 6,
       date: '12/01 (二)',
       title: '神戶港灣晨光・滿載回憶平安返抵台中',
-      area: '大阪 ➔ 神戶機場 (UKB) ➔ 台中清泉崗機場 (RMQ)',
+      area: '大阪退房 ➔ 神戶機場 (UKB) ➔ 台中清泉崗機場 (RMQ)',
+      hotel: '溫暖的家（11:00 前辦理退房，前往神戶機場搭機返台）',
       weatherTip: '約 10°C ~ 16°C｜返程搭機建議穿著寬鬆舒適的褲裝與外套',
       walkingLevel: '極輕鬆（專車或電車直達神戶機場，通關快速免奔波）',
       highlight: '悠閒享用飯店早餐、神戶機場觀景台與伴手禮補貨、星宇航空直飛回台中溫暖的家',
@@ -591,10 +610,10 @@ export default function App() {
   // 4. 展開詳細資訊的景點卡片集合
   const [expandedStopIds, setExpandedStopIds] = useState({ 'd1-1': true, 'd1-2': true });
 
-  // 5. 旅遊資料庫狀態 (支援自訂編輯並儲存至 localStorage)
+  // 5. 旅遊資料庫狀態 (支援自訂編輯並儲存至 localStorage，升級為 kansai_2026_elderly_v3 以立即載入 11/26-27 連住兩晚神戶萬豪資料)
   const [tripData, setTripData] = useState(() => {
     try {
-      const saved = localStorage.getItem('kansai_2026_trip_data_v1');
+      const saved = localStorage.getItem('kansai_2026_elderly_v3');
       return saved ? JSON.parse(saved) : DEFAULT_TRIP_DATA;
     } catch {
       return DEFAULT_TRIP_DATA;
@@ -630,7 +649,7 @@ export default function App() {
   // 儲存行程資料
   useEffect(() => {
     try {
-      localStorage.setItem('kansai_2026_trip_data_v1', JSON.stringify(tripData));
+      localStorage.setItem('kansai_2026_elderly_v3', JSON.stringify(tripData));
     } catch (e) {
       console.error(e);
     }
@@ -917,7 +936,7 @@ export default function App() {
                 <div>
                   <div className="font-extrabold text-lg sm:text-xl text-amber-900">飯店給司機看</div>
                   <div className="text-xs sm:text-sm text-stone-600 font-medium">
-                    日文地址全螢幕放大
+                    神戶萬豪・大阪飯店字卡
                   </div>
                 </div>
               </button>
@@ -1061,6 +1080,39 @@ export default function App() {
               <h2 className={`${fontConfig.sectionTitle} font-black text-red-950 mb-4`}>
                 {currentDayObj.title}
               </h2>
+
+              {/* 當晚住宿飯店醒目標示 */}
+              {currentDayObj.hotel && (
+                <div className="bg-white border-2 border-amber-400 rounded-xl p-3.5 mb-4 flex flex-wrap items-center justify-between gap-2 shadow-sm">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl" role="img" aria-label="hotel">
+                      🏨
+                    </span>
+                    <div>
+                      <span className="text-xs sm:text-sm font-extrabold text-amber-900 block">
+                        今晚下榻住宿：
+                      </span>
+                      <span className="font-black text-stone-900 text-base sm:text-xl">
+                        {currentDayObj.hotel}
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => {
+                      const targetHotel =
+                        currentDayObj.dayNumber <= 2
+                          ? tripData.hotels[0]
+                          : tripData.hotels[1] || tripData.hotels[0];
+                      setSelectedModalData(targetHotel);
+                      setModalType('hotel');
+                    }}
+                    className="bg-amber-100 hover:bg-amber-200 text-amber-950 font-extrabold text-sm sm:text-base px-3.5 py-2 rounded-lg border border-amber-400 flex items-center gap-1.5"
+                  >
+                    <span>🚕</span>
+                    <span>看今晚飯店司機字卡</span>
+                  </button>
+                </div>
+              )}
 
               {/* 三大長輩安心指標：重點、穿搭、步行強度 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-4">
@@ -1469,6 +1521,18 @@ export default function App() {
                       <div className="pt-1 text-emerald-900 font-bold">
                         🏪 周邊機能：{hotel.nearby}
                       </div>
+                      {hotel.features && hotel.features.length > 0 && (
+                        <div className="pt-2 flex flex-wrap gap-2">
+                          {hotel.features.map((feat, fIdx) => (
+                            <span
+                              key={fIdx}
+                              className="bg-amber-100 text-amber-950 text-xs sm:text-sm font-extrabold px-3 py-1 rounded-lg border border-amber-300"
+                            >
+                              ✓ {feat}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
 
                     <div className="flex flex-wrap gap-3">
@@ -1735,8 +1799,9 @@ export default function App() {
 
             <div className="space-y-5 text-left">
               <div className="bg-amber-50 p-5 rounded-2xl border-2 border-amber-300">
-                <div className="text-sm sm:text-base font-extrabold text-amber-900 mb-1">
-                  運転手さん、このホテルまでお願いします：
+                <div className="text-sm sm:text-base font-extrabold text-amber-900 mb-2">
+                  {selectedModalData.taxiInstructionJa ||
+                    '運転手さん、このホテルまでお願いします：'}
                 </div>
                 <div className="text-2xl sm:text-4xl font-black text-stone-950 leading-snug mb-4">
                   {selectedModalData.nameJa}
@@ -1750,35 +1815,58 @@ export default function App() {
               </div>
 
               <div className="bg-stone-100 p-4 rounded-xl text-stone-800">
-                <div className="font-extrabold">中文對照：{selectedModalData.nameZh}</div>
+                <div className="font-extrabold text-lg">{selectedModalData.nights}</div>
+                <div className="font-extrabold text-red-900 mt-0.5">
+                  中文名稱：{selectedModalData.nameZh}
+                </div>
                 <div className="text-sm sm:text-base mt-1">{selectedModalData.addressZh}</div>
               </div>
 
               {/* 切換不同飯店按鈕 */}
               {tripData.hotels.length > 1 && (
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {tripData.hotels.map((h, i) => (
-                    <button
-                      key={h.id}
-                      onClick={() => setSelectedModalData(h)}
-                      className={`px-3.5 py-2 rounded-xl font-bold text-sm border ${
-                        selectedModalData.id === h.id
-                          ? 'bg-stone-900 text-white border-stone-900'
-                          : 'bg-white text-stone-700 border-stone-300'
-                      }`}
-                    >
-                      切換飯店 {i + 1}：{h.nameZh.slice(0, 10)}...
-                    </button>
-                  ))}
+                <div className="space-y-2 pt-1">
+                  <div className="text-xs sm:text-sm font-extrabold text-stone-600">
+                    👇 點選切換不同天數的住宿飯店字卡：
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {tripData.hotels.map((h, i) => (
+                      <button
+                        key={h.id}
+                        onClick={() => setSelectedModalData(h)}
+                        className={`px-4 py-2.5 rounded-xl font-extrabold text-sm sm:text-base border-2 transition-all ${
+                          selectedModalData.id === h.id
+                            ? 'bg-red-800 text-white border-red-950 shadow'
+                            : 'bg-white text-stone-800 border-stone-300 hover:bg-amber-50'
+                        }`}
+                      >
+                        🏨 飯店 {i + 1}：{h.nameZh}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
 
-              <button
-                onClick={() => setModalType(null)}
-                className="w-full bg-red-800 hover:bg-red-900 text-white font-black text-xl py-4 rounded-2xl shadow-md"
-              >
-                關閉放大字卡
-              </button>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  onClick={() =>
+                    speakJapanese(
+                      selectedModalData.taxiInstructionJa ||
+                        `${selectedModalData.nameJa}までお願いします`,
+                      selectedModalData.id
+                    )
+                  }
+                  className="flex-1 bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-lg sm:text-xl py-4 rounded-2xl shadow flex items-center justify-center gap-2"
+                >
+                  <Volume2 className="w-6 h-6" />
+                  <span>播放日語給司機聽</span>
+                </button>
+                <button
+                  onClick={() => setModalType(null)}
+                  className="flex-1 bg-red-800 hover:bg-red-900 text-white font-black text-lg sm:text-xl py-4 rounded-2xl shadow-md"
+                >
+                  關閉放大字卡
+                </button>
+              </div>
             </div>
           </div>
         </div>
